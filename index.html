@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/styles/index.css">
+    <title>LeafBD</title>
+</head>
+
+<body>
+    <main>
+        <div id="map"></div>
+
+        <form action="#">
+            <h2>Saúde Social</h2>
+
+            <input type="text" placeholder="Nome" id="name" required>
+            <input type="email" placeholder="email" id="email" required>
+            <input type="text" placeholder="Especialidade" id="specialty" required>
+
+            <label>
+                Horário de Abertura
+                <input type="time" id="opening-time" required>
+            </label>
+            <label>
+                Horário de fechamento
+                <input type="time" id="closing-time" required>
+            </label>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+    <p>Escolha a posição do escritório no mapa acima</p>
+
+    <script src="./src/scripts/main.js">
+    </script>
+
+</body>
+
+</html>

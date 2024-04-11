@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: rgb(25, 25, 52);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main {
+    width: 100%;
+    max-width: 800px;
+    height: 90vh;
+    max-height: 500px;
+    background-color: rgb(17, 17, 34);
+    padding: 16px;
+    border-radius: 24px;
+    box-shadow: 0 2px 2px #22222240;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 40%;
+    min-width: 300px;
+    padding: 16px;
+    gap: 12px;
+}
+
+input {
+    font-size: 1rem;
+    padding: 8px 16px;
+    width: 100%;
+    border-radius: 8px;
+    border: none;
+}
+
+input:focus {
+    outline: 2px solid orange;
+}
+
+button {
+    padding: 8px 0px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    color: wheat;
+    background-color: rgb(243, 77, 0);
+    border-radius: 8px;
+    width: 100%;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: white;
+    color: orangered;
+}
+
+#map {
+    height: 100%;
+    width: 60%;
+    border-radius: 16px;
+    min-width: 400px;
+}
